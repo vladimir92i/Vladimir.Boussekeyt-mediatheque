@@ -15,7 +15,7 @@ namespace Mediatheque.CoreTests.ServiceTests.MediathequeServiceTests
         public void Return0_WhenNoObject()
         {
             //Arrange
-            MediathequeService mediathequeService = new MediathequeService(null);
+            MediathequeService mediathequeService = new MediathequeService(new Core.DAL.ApplicationDbContext());
 
             //Act
             int actual = mediathequeService.GetNombreObjet();
@@ -28,7 +28,7 @@ namespace Mediatheque.CoreTests.ServiceTests.MediathequeServiceTests
         public void Return03_When3Object()
         {
             //Arrange
-            MediathequeService mediathequeService = new MediathequeService(null);
+            MediathequeService mediathequeService = new MediathequeService(new Core.DAL.ApplicationDbContext());
             mediathequeService.AddObjet(new CD("Spice world", "Spice girl"));
             mediathequeService.AddObjet(new CD("Smash", "Offspring"));
             mediathequeService.AddObjet(new JeuxDeSociete("Jeux de 54 cartes", 3,99,"carrefour", TypeJeuxDeSociete.Carte));
