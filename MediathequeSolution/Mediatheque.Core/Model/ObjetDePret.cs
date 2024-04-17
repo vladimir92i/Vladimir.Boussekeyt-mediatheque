@@ -17,6 +17,10 @@ namespace Mediatheque.Core.Model
         {
             this.TitreDeLObjet = titreDeLObjet;
         }
+        public ObjetDePret()
+        {
+
+        }
 
         public bool Emprunte(string emprunteur)
         {

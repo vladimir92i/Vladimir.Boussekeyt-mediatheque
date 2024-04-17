@@ -15,6 +15,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediatheque.Poster", "Media
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediatheque.PosterTests", "Mediatheque.PosterTests\Mediatheque.PosterTests.csproj", "{BFE7D224-B9C3-4389-9C42-011F6B39B4A3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediatheque.Web", "Mediatheque.Web\Mediatheque.Web.csproj", "{E7B675D1-1454-45E5-8A13-D104F2C2A255}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4D72C299-ADDF-4EEE-B52C-58A6DEC40E02} = {4D72C299-ADDF-4EEE-B52C-58A6DEC40E02}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +50,10 @@ Global
 		{BFE7D224-B9C3-4389-9C42-011F6B39B4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE7D224-B9C3-4389-9C42-011F6B39B4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFE7D224-B9C3-4389-9C42-011F6B39B4A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B675D1-1454-45E5-8A13-D104F2C2A255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B675D1-1454-45E5-8A13-D104F2C2A255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B675D1-1454-45E5-8A13-D104F2C2A255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B675D1-1454-45E5-8A13-D104F2C2A255}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

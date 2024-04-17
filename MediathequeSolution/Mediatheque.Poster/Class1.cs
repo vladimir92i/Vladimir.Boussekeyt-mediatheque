@@ -12,10 +12,12 @@ namespace Mediatheque.Poster
         {
          
             var client = new RestClient();
-            var request = new RestRequest($"https://www.omdbapi.com/?s={titre}&apikey=9358fa09");
+            var request = new RestRequest($"https://www.omdbapi.com/?s={titre}&apikey=JeBzKi?");
             // The cancellation token comes from the caller. You can still make a call without it.
-            var response = await client.GetAsync(request);
-            return response.Content;
+            var taskResponse = client.GetAsync<OmdbResponse>(request);
+            OmdbResponse response = taskResponse.Result;
+            return response.Search[0].Poster;
         }
     }
+    
 }

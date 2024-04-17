@@ -15,6 +15,8 @@ namespace Mediatheque.Core.DAL
 
         public DbSet<Etagere> Etageres { get; set; }
 
+        public DbSet<Dvd> Dvd { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var connectionString = "Server=localhost;Port=3306;Database=Mediatheque;Uid=root;Pwd=;";
